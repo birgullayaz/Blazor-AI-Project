@@ -81,7 +81,7 @@
     private IReadOnlyList<string> sizes = ["256x256", "512x512", "1024x1024"];
 
 
-    // Generated Image URLs
+    @* Generated Image URLs *@
     private List<string> imageUrls = new();
 
     private async Task HandleGenerateClick()
@@ -124,6 +124,7 @@
         }
     }
 
+    @* Generated Form *@
     protected class FormModel
     {
         [Required, MinLength(5), MaxLength(250)]
